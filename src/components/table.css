@@ -1,0 +1,101 @@
+.pagination {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+table {
+  margin: 2% auto;
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 60%;
+}
+th {
+  color: dodgerblue;
+  font-weight: 300;
+  font-size: 1rem;
+}
+td,
+th {
+  border-bottom: 1px #dddddd solid;
+  text-align: left;
+  padding: 8px;
+}
+
+.striped:nth-child(even) {
+  background-color: #dddddd;
+}
+.hover:hover {
+  background-color: #61dafb;
+}
+.topBar {
+  min-height: 100px auto;
+  width: 60%;
+  margin: 2% auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+.serachBar {
+  width: 50%;
+  margin: 8% 0% 5% 15%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: center;
+}
+
+.serachBar input[type="text"] {
+  height: 30px;
+  padding-left: 15px;
+  border-radius: 10px;
+  border: 1px solid dodgerblue;
+}
+.serachBar input[type="text"]:focus {
+  outline: none;
+  border: 1px solid dodgerblue;
+  box-shadow: 2px 1px 1px 1px dodgerblue;
+}
+.serachBar button {
+  padding: 2px 10px;
+  border-radius: 2px;
+  color: #fff;
+  height: 30px;
+  background-color: dodgerblue;
+  border: none;
+}
+.serachBar button:hover {
+  box-shadow: 2px 2px 5px 2px rgb(66, 65, 65);
+}
+.sortingList {
+  width: 50%;
+  text-align: right;
+}
+
+@media screen and (max-width: 767px) {
+  table {
+    width: 90%;
+  }
+  .topBar {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .serachBar {
+    margin: 3% 0 0 2%;
+    width: 100%;
+    text-align: left;
+  }
+  .serachBar input[type="text"] {
+    width: 100%;
+  }
+  .sortingList {
+    width: 100%;
+  }
+  .serachBar button {
+    margin-left: 10px;
+    margin-right: -10px;
+  }
+}
